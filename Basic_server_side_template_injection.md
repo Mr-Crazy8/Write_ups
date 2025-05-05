@@ -14,6 +14,7 @@
     To solve the lab, review the ERB documentation to learn how to execute arbitrary Ruby code, then       delete the morale.txt file from Carlos's home directory.
 
 🔍 Recon & Exploitation Steps
+
     🔹 Understanding the Syntax
         I began by researching ERB (Embedded Ruby) syntax and how it processes template code. From the         documentation, I learned:
 
