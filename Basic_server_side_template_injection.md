@@ -11,6 +11,7 @@
 📜 Challenge Description
 
     This lab is vulnerable to server-side template injection due to the unsafe construction of an ERB      template.
+    
     To solve the lab, review the ERB documentation to learn how to execute arbitrary Ruby code, then       delete the morale.txt file from Carlos's home directory.
 
 🔍 Recon & Exploitation Steps
