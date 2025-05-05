@@ -25,11 +25,11 @@
 
 To test for SSTI, I used the following payload:
 
-{{7*7}}
+    {{7*7}}
 
 When I submitted it in the input field, the output was:
 
-49
+    49
 
 This confirmed the presence of SSTI.
 🧨 Vulnerability Identified
