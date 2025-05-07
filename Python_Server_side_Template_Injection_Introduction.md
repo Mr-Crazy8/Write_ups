@@ -12,7 +12,7 @@
 
     This service allows you to generate a web page. Use it to read the flag!
     
-    [](images/0.png)
+    ![Challenge Screenshot](images/0.png)
 
 🔍 Recon & Exploitation Steps
 
