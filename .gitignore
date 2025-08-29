@@ -1,0 +1,60 @@
+# Enhanced Bug Bounty Automation - Git Ignore File
+
+# Results and output directories
+results/
+*_results/
+output/
+scans/
+reports/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+
+# Log files
+*.log
+logs/
+
+# Configuration files with sensitive data
+*secret*.conf
+*private*.conf
+*.env
+
+# Tool-specific files
+.nuclei/
+.subfinder/
+.amass/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# Test output
+test_results/
+/tmp/bounty_test_*
