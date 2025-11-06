@@ -1,0 +1,30 @@
+# Temporary files
+*.tmp
+*.log
+/tmp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Scanner output
+wordpress_recon_*.json
+scan_results_*.json
+*.report
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
